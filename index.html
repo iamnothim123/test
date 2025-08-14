@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Basic App Website</title>
+  <meta name="description" content="A minimal single-page app you can run locally." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="#/" class="brand">
+      <img src="assets/logo.svg" alt="Logo" class="logo" />
+      <span>Basic App</span>
+    </a>
+    <nav class="nav">
+      <a href="#/" data-link>Home</a>
+      <a href="#/about" data-link>About</a>
+      <a href="#/contact" data-link>Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+
+  <main id="app" class="container" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Basic App. Built with vanilla HTML/CSS/JS.</p>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
